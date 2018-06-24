@@ -1,8 +1,11 @@
 import React from 'react';
+import LINKS from '../fixtures/links';
 
 const SubHeaderLogo = () => (
   <div>
-    <img src="/images/mypocketlifev2.png" />
+    <a href={LINKS.HOME}>
+      <img src="/images/mypocketlifev2.png" />
+    </a>
   </div>
 );
 
