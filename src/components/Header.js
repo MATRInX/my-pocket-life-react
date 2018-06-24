@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import HeaderNavBar from './HeaderNavBar';
+import HeaderSearch from './HeaderSearch';
 
 const Header = () => (
-  <div>Header's content</div>
+  <div>
+    <HeaderNavBar />
+    <HeaderSearch />
+  </div>
 );
 
 export default Header;
