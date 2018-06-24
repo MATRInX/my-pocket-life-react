@@ -1,0 +1,8 @@
+1. Pobrać treść jednego posta i zapisac do zmiennej
+2. zobaczyc czy jestem w stanie w tym szukac
+3. Sprawdzic konwersje poprzez funkcje konwersji z unicode do html (json.parse itd.)
+4. Sparsować do htmla i znowu sprawdzic wyszukiwanie.
+5. Spróbować wyciągnąć opis ze strony o mnie i z jakiegoś posta poczatek posta.
+
+- to powinno zdekodować content na html 
+decodeURIComponent(JSON.parse('"\u003c"'));
