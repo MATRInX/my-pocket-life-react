@@ -6,3 +6,7 @@
 
 - to powinno zdekodować content na html 
 decodeURIComponent(JSON.parse('"\u003c"'));
+
+
+
+To DO 
