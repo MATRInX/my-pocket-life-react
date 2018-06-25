@@ -1,32 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LINKS from '../fixtures/links';
 
 const SubHeaderNavBar = () => (
   <ul>
     <li>
-      <a href={LINKS.POCKET_SCRAPBOOKING}>
+      <Link to={LINKS.POCKET_SCRAPBOOKING}>
         Pocket Scrapbooking
-      </a>
+      </Link>
     </li>
     <li>
-      <a href={LINKS.INSPIRATION}>
+      <Link to={LINKS.INSPIRATION}>
         Inspiracje
-      </a>
+      </Link>
     </li>
     <li>
-      <a href={LINKS.DIY}>
+      <Link to={LINKS.DIY}>
         DIY
-      </a>
+      </Link>
     </li>
     <li>
-      <a href={LINKS.REVIEWS}>
+      <Link to={LINKS.REVIEWS}>
         Recenzje
-      </a>
+      </Link>
     </li>
     <li>
-      <a href={LINKS.COMMUNITY}>
+      <Link to={LINKS.COMMUNITY}>
         Społeczność
-      </a>
+      </Link>
     </li>
   </ul>
 );

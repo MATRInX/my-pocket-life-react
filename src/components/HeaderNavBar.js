@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LINKS from '../fixtures/links';
 
@@ -6,15 +7,15 @@ const HeaderNavBar = () => (
   <nav>
     <ul>
       <li>
-        <a href={LINKS.HOME}>
+        <Link to={LINKS.HOME}>
           <FontAwesomeIcon icon="home" />
-        </a>
+        </Link>
       </li>
       <li>
-        <a href={LINKS.ABOUT_ME}>O mnie</a>
+        <Link to={LINKS.ABOUT_ME}>O mnie</Link>
       </li>
       <li>
-        <a href={LINKS.CONTACT}>Kontakt</a>
+        <Link to={LINKS.CONTACT}>Kontakt</Link>
       </li>
       <li>
         <a href={LINKS.FACEBOOK} target="_blank">
