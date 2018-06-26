@@ -9,4 +9,5 @@ decodeURIComponent(JSON.parse('"\u003c"'));
 
 
 
-To DO 
+TO DO 
+1. Spróbowac pobrać posty i/ lub wdrozyć reduxa do aplikacji.
