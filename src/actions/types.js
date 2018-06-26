@@ -1,0 +1,12 @@
+export const POSTS = {
+  SET_POSTS: 'SET_POSTS'
+};
+
+// searchText, categoryByLabel, mainPageByindex, archiveByMonthAndYear
+export const FILTERS = {
+  SET_MAIN_PAGE_INDEX: 'SET_MAIN_PAGE_INDEX',
+  SET_SEARCH_TEXT: 'SET_SEARCH_TEXT',
+  SET_CATEGORY_LABEL: 'SET_CATEGORY_LABEL',
+  SET_ARCHIVE_MONTH: 'SET_ARCHIVE_MONTH',
+  SET_ARCHIVE_YEAR: 'SET_ARCHIVE_YEAR'
+};
