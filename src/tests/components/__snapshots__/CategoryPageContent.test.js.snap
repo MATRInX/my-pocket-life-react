@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render CategoryPageContent 1`] = `
+<div>
+  CategoryPageContent - category:
+  <p>
+    DIY
+  </p>
+</div>
+`;

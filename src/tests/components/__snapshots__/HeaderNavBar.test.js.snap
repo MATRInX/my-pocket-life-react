@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render HeaderNavBar 1`] = `
+<nav>
+  <ul>
+    <li>
+      <Link
+        replace={false}
+        to="/"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon="home"
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          symbol={false}
+          transform={null}
+        />
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/o-mnie"
+      >
+        O mnie
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/kontakt"
+      >
+        Kontakt
+      </Link>
+    </li>
+    <li>
+      <a
+        href="https://www.facebook.com/MyPocketLife/"
+        target="_blank"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Array [
+              "fab",
+              "facebook-f",
+            ]
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          symbol={false}
+          transform={null}
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.instagram.com/aneta.pos/"
+        target="_blank"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Array [
+              "fab",
+              "instagram",
+            ]
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          symbol={false}
+          transform={null}
+        />
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

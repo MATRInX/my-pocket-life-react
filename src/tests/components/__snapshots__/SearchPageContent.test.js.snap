@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render SearchPageContent 1`] = `
+<div>
+  SearchPageContent content... - query string:
+  <p>
+    tekst
+  </p>
+</div>
+`;

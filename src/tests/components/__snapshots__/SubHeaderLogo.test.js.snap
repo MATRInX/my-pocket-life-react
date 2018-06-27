@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render SubHeaderLogo 1`] = `
+<div>
+  <Link
+    replace={false}
+    to="/"
+  >
+    <img
+      src="/images/mypocketlifev2.png"
+    />
+  </Link>
+</div>
+`;

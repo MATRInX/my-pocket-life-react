@@ -2,7 +2,8 @@ import React from 'react';
 
 const CategoryPageContent = (props) => (
   <div>
-    CategoryPageContent - category = {props.match.params.category}
+    CategoryPageContent - category:
+    <p>{props.match.params.category}</p>
   </div>
 );
 

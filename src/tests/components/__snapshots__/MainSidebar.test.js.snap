@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render MainSidebar 1`] = `
+<aside>
+  <AboutMe />
+  <InstagramFeed />
+  <FavouritePosts />
+  <FacebookFanpage />
+  <Archive />
+</aside>
+`;

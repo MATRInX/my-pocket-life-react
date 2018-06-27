@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render AboutMe widget on sidebar 1`] = `
+<div>
+  AboutMe content
+</div>
+`;

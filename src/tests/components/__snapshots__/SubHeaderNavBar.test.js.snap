@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render SubHeaderNavBar 1`] = `
+<ul>
+  <li>
+    <Link
+      replace={false}
+      to="/kategoria/pocket-scrapbooking"
+    >
+      Pocket Scrapbooking
+    </Link>
+  </li>
+  <li>
+    <Link
+      replace={false}
+      to="/kategoria/inspiracje"
+    >
+      Inspiracje
+    </Link>
+  </li>
+  <li>
+    <Link
+      replace={false}
+      to="/kategoria/diy"
+    >
+      DIY
+    </Link>
+  </li>
+  <li>
+    <Link
+      replace={false}
+      to="/kategoria/recenzje"
+    >
+      Recenzje
+    </Link>
+  </li>
+  <li>
+    <Link
+      replace={false}
+      to="/kategoria/spolecznosc"
+    >
+      Społeczność
+    </Link>
+  </li>
+</ul>
+`;
