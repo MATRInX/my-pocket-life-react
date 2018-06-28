@@ -5,7 +5,7 @@ class HeaderSearch extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      queryString: ''
+      queryString: props.searchText ? props.searchText : ''
     };
   };
 

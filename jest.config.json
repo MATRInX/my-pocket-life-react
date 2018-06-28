@@ -3,5 +3,6 @@
   "setupFiles": [
     "raf/polyfill",
     "<rootDir>/src/tests/setupTests.js"
-  ]
+  ],
+  "testURL": "https:localhost:8080"
 }

@@ -20,7 +20,7 @@ export const setCategoryLabel = categoryLabel => ({
 });
 
 // SET_ARCHIVE_MONTH
-export const setArchiveLabel = archiveMonth => ({
+export const setArchiveMonth = archiveMonth => ({
   type: FILTERS.SET_ARCHIVE_MONTH,
   archiveMonth
 });
