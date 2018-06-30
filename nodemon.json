@@ -1,0 +1,14 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "diagrams",
+    ".vscode",
+    "public",
+    "src"
+  ],
+  "watch": [
+    "server"
+  ]
+}
