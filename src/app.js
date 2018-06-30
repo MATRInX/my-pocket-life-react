@@ -8,7 +8,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import { setPosts } from './actions/posts';
+import { setPosts, setPostsAsync } from './actions/posts';
 import { setMainPageIndex } from './actions/filters';
 import { dummyPosts } from './fixtures/dummyData';
 
@@ -16,7 +16,8 @@ library.add(fab, faHome);
 
 const store = configureStore();
 
-store.dispatch(setPosts(dummyPosts));
+//store.dispatch(setPosts(dummyPosts));
+store.dispatch(setPostsAsync());
 store.dispatch(setMainPageIndex(3));
 
 const jsx = (

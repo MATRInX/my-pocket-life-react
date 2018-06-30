@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import moment from 'moment';
+import renderHTML from 'react-render-html';
 import selectMainPagePosts from '../selectors/mainPagePosts';
 
 export const MainBody = ({ posts } = props) => (
@@ -11,11 +13,14 @@ export const MainBody = ({ posts } = props) => (
       ) : (
         posts.map((singlePost, singleIndex) => (
           <ul key={singleIndex}>
-            <li>{singlePost.postId}</li>
-            <li>{singlePost.published}</li>
+            <li>
+              <img src={singlePost.image} />
+            </li>
+            <li>{singlePost.id}</li>
+            <li>{new moment(singlePost.published).fromNow()}</li>
             <li>{singlePost.url}</li>
             <li>{singlePost.title}</li>
-            <li>{singlePost.content}</li>
+            <li>{renderHTML(singlePost.content)}</li>
           </ul>
         ))
       )     
