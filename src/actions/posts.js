@@ -10,22 +10,12 @@ export const setPosts = (posts = []) => ({
 
 export const setPostsAsync = () => {
   return (dispatch, getState) => {
-    return axios.get('/api/get-all-posts')
+    return axios.post('/api/get-all-posts')
     .then(response => {
-      //console.log('odpowiedz z backendu: ', response.data);
       const posts = [];
-
       response.data.items.forEach(element => {
-        posts.push({ 
-          id: element.id,
-          published: element.published,
-          url: element.url,
-          content: element.content,
-          title: element.title,
-          image: element.images[0].url
-        });
+        posts.push({ ...element });
       });
-      console.log(posts);
       dispatch(setPosts(posts));
     })
     .catch(err => {

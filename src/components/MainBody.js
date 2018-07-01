@@ -1,35 +1,11 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import moment from 'moment';
-import renderHTML from 'react-render-html';
-import selectMainPagePosts from '../selectors/mainPagePosts';
+import PostList from './PostsList';
 
-export const MainBody = ({ posts } = props) => (
+export const MainBody = () => (
   <div>
     <p>Posts list</p>
-    {
-      posts.length === 0 ? (
-        <div>Brak postów do wyświetlenia</div>
-      ) : (
-        posts.map((singlePost, singleIndex) => (
-          <ul key={singleIndex}>
-            <li>
-              <img src={singlePost.image} />
-            </li>
-            <li>{singlePost.id}</li>
-            <li>{new moment(singlePost.published).fromNow()}</li>
-            <li>{singlePost.url}</li>
-            <li>{singlePost.title}</li>
-            <li>{renderHTML(singlePost.content)}</li>
-          </ul>
-        ))
-      )     
-    }
+    <PostList />
   </div>
 );
 
-const mapStateToProps = ({ posts, filters} = state) => ({
-  posts: selectMainPagePosts(posts, filters)
-});
-
-export default connect(mapStateToProps)(MainBody);
+export default MainBody;
