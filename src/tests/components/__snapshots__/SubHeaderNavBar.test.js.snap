@@ -2,15 +2,19 @@
 
 exports[`should correctly render SubHeaderNavBar 1`] = `
 <ul>
-  <li>
+  <li
+    key="0"
+  >
     <Link
       replace={false}
       to="/kategoria/pocket-scrapbooking"
     >
-      Pocket Scrapbooking
+      Pocket scrapbooking
     </Link>
   </li>
-  <li>
+  <li
+    key="1"
+  >
     <Link
       replace={false}
       to="/kategoria/inspiracje"
@@ -18,7 +22,9 @@ exports[`should correctly render SubHeaderNavBar 1`] = `
       Inspiracje
     </Link>
   </li>
-  <li>
+  <li
+    key="2"
+  >
     <Link
       replace={false}
       to="/kategoria/diy"
@@ -26,7 +32,9 @@ exports[`should correctly render SubHeaderNavBar 1`] = `
       DIY
     </Link>
   </li>
-  <li>
+  <li
+    key="3"
+  >
     <Link
       replace={false}
       to="/kategoria/recenzje"
@@ -34,7 +42,9 @@ exports[`should correctly render SubHeaderNavBar 1`] = `
       Recenzje
     </Link>
   </li>
-  <li>
+  <li
+    key="4"
+  >
     <Link
       replace={false}
       to="/kategoria/spolecznosc"

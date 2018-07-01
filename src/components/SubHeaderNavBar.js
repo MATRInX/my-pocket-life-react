@@ -1,35 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LINKS from '../fixtures/links';
+import { CATEGORIES } from '../fixtures/links';
 
-const SubHeaderNavBar = () => (
-  <ul>
-    <li>
-      <Link to={LINKS.POCKET_SCRAPBOOKING}>
-        Pocket Scrapbooking
-      </Link>
-    </li>
-    <li>
-      <Link to={LINKS.INSPIRATION}>
-        Inspiracje
-      </Link>
-    </li>
-    <li>
-      <Link to={LINKS.DIY}>
-        DIY
-      </Link>
-    </li>
-    <li>
-      <Link to={LINKS.REVIEWS}>
-        Recenzje
-      </Link>
-    </li>
-    <li>
-      <Link to={LINKS.COMMUNITY}>
-        Społeczność
-      </Link>
-    </li>
-  </ul>
-);
+const SubHeaderNavBar = () => {
+  const linksArray = [];
+  let index = 0;
+  for (const prop in CATEGORIES) {
+    if (prop !== 'NEWS') {
+      linksArray.push(
+        <li key={index++}>
+          <Link to={CATEGORIES[prop].link}>
+            {CATEGORIES[prop].name}
+          </Link>
+        </li>
+      )
+    }
+  };
+  
+  return (
+    <ul>
+      {linksArray}
+    </ul>
+  )
+};
 
 export default SubHeaderNavBar;
