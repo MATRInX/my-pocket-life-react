@@ -1,15 +1,6 @@
 const CATEGOTY_NAME = 'kategoria';
 
-export const CATEGORIES = {
-  POCKET_SCRAPBOOKING: 'Pocket scrapbooking',
-  INSPIRATION: 'Inspiracje',
-  DIY: 'DIY',
-  REVIEWS: 'Recenzje',
-  COMMUNITY: 'Społeczność',
-  NEWS: 'News'
-};
-
-const LINKS = {
+export const LINKS = {
   HOME: '/',
   ABOUT_ME: '/o-mnie',
   CONTACT: '/kontakt',
@@ -21,6 +12,33 @@ const LINKS = {
   REVIEWS: `/${CATEGOTY_NAME}/recenzje`,
   COMMUNITY: `/${CATEGOTY_NAME}/spolecznosc`,
   NEWS: `/${CATEGOTY_NAME}/news`
+};
+
+export const CATEGORIES = {
+  POCKET_SCRAPBOOKING: {
+    name: 'Pocket scrapbooking',
+    link: LINKS.POCKET_SCRAPBOOKING
+  },
+  INSPIRATION: {
+    name: 'Inspiracje',
+    link: LINKS.INSPIRATION
+  },
+  DIY: {
+    name: 'DIY',
+    link: LINKS.DIY
+  },
+  REVIEWS: {
+    name: 'Recenzje',
+    link: LINKS.REVIEWS
+  },
+  COMMUNITY: {
+    name: 'Społeczność',
+    link: LINKS.COMMUNITY
+  },
+  NEWS: {
+    name: 'News',
+    link: LINKS.NEWS
+  }
 };
 
 export default LINKS;
