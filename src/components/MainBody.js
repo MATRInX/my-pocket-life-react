@@ -20,7 +20,7 @@ export const MainBody = ({ posts } = props) => (
             <li>{new moment(singlePost.published).fromNow()}</li>
             <li>{singlePost.url}</li>
             <li>{singlePost.title}</li>
-            <li>{renderHTML(singlePost.content)}</li>
+            <li>{singlePost.content}</li>
           </ul>
         ))
       )     
