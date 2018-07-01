@@ -23,6 +23,7 @@ app.post('/test', (req, res, next) => {
 
 app.get('/api/get-all-posts', (req, res, next) => {
   axios.get(getAllPostsUrlPartial).then(response => {
+<<<<<<< HEAD
     console.log('get-all-posts');
     let re = RegExp('>((.|\n)*?)<','gm'); //(.|\n)*?
     let myArray;
@@ -57,6 +58,8 @@ app.get('/api/get-all-posts', (req, res, next) => {
       //console.log(response.data.items[index].content);
       //console.log('end-content:', element.content);
     });
+=======
+>>>>>>> a04494fb5c5c42cada8d72de39d4af43e139acbd
     res.send(response.data);
   });
 });
