@@ -3,7 +3,7 @@
 exports[`should correctly render MainPageContent 1`] = `
 <div>
   MainPageContent...
-  <Connect(MainBody) />
+  <MainBody />
   <MainSidebar />
 </div>
 `;

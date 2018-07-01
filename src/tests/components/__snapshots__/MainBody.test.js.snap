@@ -5,63 +5,7 @@ exports[`should correctly render MainBody with dummy posts data 1`] = `
   <p>
     Posts list
   </p>
-  <ul
-    key="0"
-  >
-    <li>
-      123abc
-    </li>
-    <li>
-      2011-08-01T19:58:00.000Z
-    </li>
-    <li>
-      http://buzz.blogger.com/2011/08/latest-updates-august-1st.html
-    </li>
-    <li>
-      Sample title1
-    </li>
-    <li>
-      Sample post content 1
-    </li>
-  </ul>
-  <ul
-    key="1"
-  >
-    <li>
-      321abc
-    </li>
-    <li>
-      2011-06-01T19:58:00.000Z
-    </li>
-    <li>
-      http://buzz.blogger.com/2011/06/latest-updates-august-1st.html
-    </li>
-    <li>
-      Sample title2
-    </li>
-    <li>
-      Sample post content 2
-    </li>
-  </ul>
-  <ul
-    key="2"
-  >
-    <li>
-      321cba
-    </li>
-    <li>
-      2011-07-01T19:58:00.000Z
-    </li>
-    <li>
-      http://buzz.blogger.com/2011/07/latest-updates-august-1st.html
-    </li>
-    <li>
-      Sample title1
-    </li>
-    <li>
-      Sample post content 3
-    </li>
-  </ul>
+  <Connect(PostList) />
 </div>
 `;
 
@@ -70,8 +14,6 @@ exports[`should correctly render MainBody with no posts 1`] = `
   <p>
     Posts list
   </p>
-  <div>
-    Brak postów do wyświetlenia
-  </div>
+  <Connect(PostList) />
 </div>
 `;
