@@ -2,6 +2,10 @@ export const POSTS = {
   SET_POSTS: 'SET_POSTS'
 };
 
+export const PAGES = {
+  SET_PAGES: 'SET_PAGES'
+};
+
 // searchText, categoryByLabel, mainPageByindex, archiveByMonthAndYear
 export const FILTERS = {
   SET_MAIN_PAGE_INDEX: 'SET_MAIN_PAGE_INDEX',
