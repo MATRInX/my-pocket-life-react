@@ -2,6 +2,8 @@ const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+require('dotenv').config({ path: '.env.production' });
+
 module.exports = env => {
   const isProduction = env === 'production'
   const CSSExtract = new ExtractTextPlugin('styles.css')
@@ -40,7 +42,12 @@ module.exports = env => {
         }
       ]
     },
-    plugins: [CSSExtract],
+    plugins: [
+      CSSExtract,
+      new webpack.DefinePlugin({
+        'process.env.FB_APP_ID': JSON.stringify(process.env.FB_APP_ID)
+      })
+    ],
     devtool: isProduction ? 'source-map' : 'inline-source-map',
     devServer: {
       contentBase: path.join(__dirname, 'public'),
