@@ -5,7 +5,7 @@ import { CATEGORIES } from '../fixtures/links';
 
 moment.locale('pl');
 
-export const PostListItem = ({id, image, url, published, title, labels, content}) => {
+export const PostListItem = ({id, image, url, published, title, labels, content, contentShort}) => {
   const publishedFromNow = moment(published).fromNow();
   const shortUrl = `/post${url.substr(url.lastIndexOf('/'))}`;
   const labelComponent = labels.map((label, index) => {
@@ -31,7 +31,7 @@ export const PostListItem = ({id, image, url, published, title, labels, content}
       <Link to={shortUrl}>
         <img src={image} />
       </Link>
-      <p>{content}</p>
+      <p>{contentShort}</p>
       {labelComponent}
     </div>
   )

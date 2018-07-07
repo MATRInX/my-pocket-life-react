@@ -11,7 +11,7 @@ const bloggerApi = process.env.BLOGGER_API;
 const bloggerApiKey = process.env.BLOGGER_API_KEY;
 const getAllPostsUrl = `${bloggerApi}/blogs/${blogId}/posts?key=${bloggerApiKey}`;  // >2sek.
 const getAllPostsUrlWith = `${bloggerApi}/blogs/${blogId}/posts?key=${bloggerApiKey}&fetchImages=true`;  // 1.8sek
-const getAllPostsUrlPartial = `${bloggerApi}/blogs/${blogId}/posts?key=${bloggerApiKey}&fetchImages=true&fields=items(id,content,labels,published,title,url,images)`;  // sek
+const getAllPostsUrlPartial = `${bloggerApi}/blogs/${blogId}/posts?key=${bloggerApiKey}&maxResults=500&fetchImages=true&fields=items(id,content,labels,published,title,url,images)`;  // sek
 const getAllPagesUrlPartial = `${bloggerApi}/blogs/${blogId}/pages?key=${bloggerApiKey}&fields=items(id,content,published,title)`;  // sek
 
 const myPocketLifeRoute = `${bloggerApi}/blogs/byurl?url=http://my-pocket-life.blogspot.com/&key=${bloggerApiKey}`;
@@ -41,7 +41,8 @@ app.post('/api/get-all-posts', (req, res, next) => {
         // add ellipsis at the end
         const postShortDescription = content.substr(0, contentLenght);
         element.contentHTML = element.content;
-        element.content = postShortDescription.substr(0, postShortDescription.lastIndexOf(" ")) + "...";
+        element.content = content;
+        element.contentShort = postShortDescription.substr(0, postShortDescription.lastIndexOf(" ")) + "...";
         element.image = element.images[0].url;
     });
     res.send(response.data);

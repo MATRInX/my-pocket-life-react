@@ -7,6 +7,13 @@ export const setMainPageIndex = index => ({
   index
 });
 
+// SET_POST_FILTERS
+export const setPostsFilters = (filterType, filterValue) => ({
+  type: FILTERS.SET_POSTS_FILTER,
+  filterType,
+  filterValue
+})
+
 // SET_SEARCH_TEXT
 export const setSearchText = searchText => ({
   type: FILTERS.SET_SEARCH_TEXT,

@@ -1,7 +1,9 @@
-import { FILTERS } from '../actions/types';
+import { FILTERS, FILTER_TYPE } from '../actions/types';
 
 const filterReducerDefaultState = {
   index: 2,
+  filterType: '',
+  filterValue: '',
   searchText: '',
   categoryLabel: '',
   archiveYear: 0,
@@ -14,6 +16,12 @@ export default (state = filterReducerDefaultState, action) => {
       return {
         ...state,
         index: action.index
+      };
+    case FILTERS.SET_POSTS_FILTER:
+      return {
+        ...state,
+        filterType: action.filterType,
+        filterValue: action.filterValue
       };
     case FILTERS.SET_SEARCH_TEXT:
       return {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import selectMainPagePosts from '../selectors/mainPagePosts';
+import selectPosts from '../selectors/posts';
 import PostListItem from './PostListItem';
 
 export const PostList = ({posts}) => (
@@ -18,7 +19,8 @@ export const PostList = ({posts}) => (
 );
 
 const mapStateToProps = ({ posts, filters} = state) => ({
-  posts: selectMainPagePosts(posts, filters)
+  mainPosts: selectMainPagePosts(posts, filters),
+  posts: selectPosts(posts, filters)
 });
 
 export default connect(mapStateToProps)(PostList);
