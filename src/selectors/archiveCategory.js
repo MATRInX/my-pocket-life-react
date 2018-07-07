@@ -10,8 +10,8 @@ export default posts => {
   const archive = [];
   archiveSet.forEach(text => {
     const dateValues = text.split(' ');
-    const month = moment(dateValues[1], 'YYYY').year();
-    const year = moment(dateValues[0], 'MMMM').month();
+    const year = moment(dateValues[1], 'YYYY').year();
+    const month = moment(dateValues[0], 'MMMM').month() + 1;
     archive.push({
       text,
       year,

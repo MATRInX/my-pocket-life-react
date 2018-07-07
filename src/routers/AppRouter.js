@@ -2,6 +2,7 @@ import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import AboutMePageContent from '../components/AboutMePageContent';
+import ArchivePageContent from '../components/ArchivePageContent';
 import ContactPageContent from '../components/ContactPageContent';
 import CategoryPageContent from '../components/CategoryPageContent';
 import Footer from '../components/Footer';
@@ -23,6 +24,7 @@ const AppRouter = () => (
       <Route path="/kontakt" component={ContactPageContent} />
       <Route path="/szukaj/:queryString" component={SearchPageContent} />
       <Route path="/kategoria/:category" component={CategoryPageContent} />
+      <Route path="/archiwum/:year/:month" component={ArchivePageContent} />
     </Switch>
     <Footer />
     </div>
