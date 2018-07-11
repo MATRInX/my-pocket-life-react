@@ -2,6 +2,20 @@
 
 exports[`should correctly render FacebookFanpage widget on sidebar 1`] = `
 <div>
-  FacebookFanpage content
+  <Facebook
+    cookie={false}
+    domain="connect.facebook.net"
+    frictionlessRequests={false}
+    language="en_US"
+    status={false}
+    version="v2.9"
+    wait={false}
+    xfbml={false}
+  >
+    <Page
+      href="https://www.facebook.com/MyPocketLife"
+      tabs="timeline"
+    />
+  </Facebook>
 </div>
 `;

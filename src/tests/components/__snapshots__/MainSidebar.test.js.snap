@@ -2,10 +2,10 @@
 
 exports[`should correctly render MainSidebar 1`] = `
 <aside>
-  <AboutMe />
+  <Connect(AboutMe) />
   <InstagramFeed />
-  <FavouritePosts />
+  <Connect(FavouritePosts) />
   <FacebookFanpage />
-  <Archive />
+  <Connect(Archive) />
 </aside>
 `;

@@ -2,7 +2,7 @@
 
 exports[`should correctly render Header 1`] = `
 <div>
-  <HeaderNavBar />
-  <HeaderSearch />
+  <Connect(HeaderNavBar) />
+  <Connect(HeaderSearch) />
 </div>
 `;

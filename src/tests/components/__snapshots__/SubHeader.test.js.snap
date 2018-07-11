@@ -3,6 +3,6 @@
 exports[`should correctly render SubHeader 1`] = `
 <div>
   <SubHeaderLogo />
-  <SubHeaderNavBar />
+  <Connect(SubHeaderNavBar) />
 </div>
 `;
