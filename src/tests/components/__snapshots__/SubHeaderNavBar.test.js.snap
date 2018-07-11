@@ -3,7 +3,7 @@
 exports[`should correctly render SubHeaderNavBar 1`] = `
 <ul>
   <li
-    key="0"
+    onClick={[Function]}
   >
     <Link
       replace={false}
@@ -13,7 +13,7 @@ exports[`should correctly render SubHeaderNavBar 1`] = `
     </Link>
   </li>
   <li
-    key="1"
+    onClick={[Function]}
   >
     <Link
       replace={false}
@@ -23,7 +23,7 @@ exports[`should correctly render SubHeaderNavBar 1`] = `
     </Link>
   </li>
   <li
-    key="2"
+    onClick={[Function]}
   >
     <Link
       replace={false}
@@ -33,7 +33,7 @@ exports[`should correctly render SubHeaderNavBar 1`] = `
     </Link>
   </li>
   <li
-    key="3"
+    onClick={[Function]}
   >
     <Link
       replace={false}
@@ -43,7 +43,7 @@ exports[`should correctly render SubHeaderNavBar 1`] = `
     </Link>
   </li>
   <li
-    key="4"
+    onClick={[Function]}
   >
     <Link
       replace={false}

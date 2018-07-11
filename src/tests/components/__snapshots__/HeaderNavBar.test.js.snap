@@ -3,7 +3,9 @@
 exports[`should correctly render HeaderNavBar 1`] = `
 <nav>
   <ul>
-    <li>
+    <li
+      onClick={[Function]}
+    >
       <Link
         replace={false}
         to="/"
@@ -27,7 +29,9 @@ exports[`should correctly render HeaderNavBar 1`] = `
         />
       </Link>
     </li>
-    <li>
+    <li
+      onClick={[Function]}
+    >
       <Link
         replace={false}
         to="/o-mnie"
@@ -35,7 +39,9 @@ exports[`should correctly render HeaderNavBar 1`] = `
         O mnie
       </Link>
     </li>
-    <li>
+    <li
+      onClick={[Function]}
+    >
       <Link
         replace={false}
         to="/kontakt"
