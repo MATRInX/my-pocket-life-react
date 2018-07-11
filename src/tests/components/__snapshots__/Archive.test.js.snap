@@ -2,6 +2,50 @@
 
 exports[`should correctly render Archive widget on sidebar 1`] = `
 <div>
-  Archive content
+  <p>
+    Archive content: 
+    0|0
+  </p>
+  <select
+    onChange={[Function]}
+    value="0|0"
+  >
+    <option
+      value="0|0"
+    >
+      Wybierz miesiąc...
+    </option>
+    <option
+      key="0"
+      value="undefined|undefined"
+    />
+    <option
+      key="1"
+      value="undefined|undefined"
+    />
+    <option
+      key="2"
+      value="undefined|undefined"
+    />
+  </select>
+</div>
+`;
+
+exports[`should correctly render Archive widget on sidebar with no archive data 1`] = `
+<div>
+  <p>
+    Archive content: 
+    0|0
+  </p>
+  <select
+    onChange={[Function]}
+    value="0|0"
+  >
+    <option
+      value="0|0"
+    >
+      Wybierz miesiąc...
+    </option>
+  </select>
 </div>
 `;
