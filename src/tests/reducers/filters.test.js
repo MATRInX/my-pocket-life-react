@@ -6,6 +6,8 @@ test('should set default state', () => {
   const state = filtersReducer(undefined, action);
   expect(state).toEqual({
     index: 2,
+    filterType: '',
+    filterValue: '',
     searchText: '',
     categoryLabel: '',
     archiveYear: 0,

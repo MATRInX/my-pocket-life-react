@@ -1,7 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should correctly render AboutMe widget content 1`] = `
+<div>
+  <div>
+    <h2>
+      Kilka słów o mnie
+    </h2>
+    <Link
+      replace={false}
+      to="/o-mnie"
+    >
+      <img />
+    </Link>
+    <p>
+      Mam na imię Aneta i od półtora roku jestem mamą. Wraz z mężem i synem mieszkamy w Tarnowskich Górach.
+    </p>
+    <Link
+      replace={false}
+      to="/o-mnie"
+    >
+      Czytaj więcej...
+    </Link>
+  </div>
+</div>
+`;
+
 exports[`should correctly render AboutMe widget on sidebar 1`] = `
 <div>
-  AboutMe content
+  <div>
+    Loading...
+  </div>
 </div>
 `;

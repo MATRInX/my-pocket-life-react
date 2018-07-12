@@ -2,6 +2,49 @@
 
 exports[`should correctly render FavouritePosts widget on sidebar 1`] = `
 <div>
-  FavouritePosts content
+  <p>
+    FavouritePosts content
+  </p>
+  <ul />
+</div>
+`;
+
+exports[`should correctly render FavouritePosts widget on sidebar with posts 1`] = `
+<div>
+  <p>
+    FavouritePosts content
+  </p>
+  <ul>
+    <Link
+      key="0"
+      replace={false}
+      to="/post/latest-updates-august-1st.html"
+    >
+      <h5>
+        Sample title1
+      </h5>
+      <img />
+    </Link>
+    <Link
+      key="1"
+      replace={false}
+      to="/post/latest-updates-august-1st.html"
+    >
+      <h5>
+        Sample title2
+      </h5>
+      <img />
+    </Link>
+    <Link
+      key="2"
+      replace={false}
+      to="/post/latest-updates-august-1st.html"
+    >
+      <h5>
+        Sample title1
+      </h5>
+      <img />
+    </Link>
+  </ul>
 </div>
 `;
