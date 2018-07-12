@@ -1,10 +1,11 @@
-import { FILTERS } from '../../actions/types';
+import { FILTERS, FILTER_TYPE } from '../../actions/types';
 import { 
   setMainPageIndex, 
   setSearchText, 
   setCategoryLabel, 
   setArchiveMonth, 
-  setArchiveYear
+  setArchiveYear,
+  setPostsFilters
 } from '../../actions/filters';
 
 test('should properly set main page index filter value', () => {
@@ -49,5 +50,38 @@ test('should properly set archive year filter value', () => {
   expect(action).toEqual({
     type: FILTERS.SET_ARCHIVE_YEAR,
     archiveYear
+  });
+});
+
+test('should set corectly search filter type and filter value state', () => {
+  const filterType = FILTER_TYPE.SEARCH;
+  const filterValue = 'DIY';
+  const action = setPostsFilters(filterType, filterValue);
+  expect(action).toEqual({
+    type: FILTERS.SET_POSTS_FILTER,
+    filterType,
+    filterValue
+  });
+});
+
+test('should set corectly category filter type and filter value state', () => {
+  const filterType = FILTER_TYPE.CATEGORY;
+  const filterValue = 'DIY';
+  const action = setPostsFilters(filterType, filterValue);
+  expect(action).toEqual({
+    type: FILTERS.SET_POSTS_FILTER,
+    filterType,
+    filterValue
+  });
+});
+
+test('should set corectly archive filter type and filter value state', () => {
+  const filterType = FILTER_TYPE.ARCHIVE;
+  const filterValue = '4|2017';
+  const action = setPostsFilters(filterType, filterValue);
+  expect(action).toEqual({
+    type: FILTERS.SET_POSTS_FILTER,
+    filterType,
+    filterValue
   });
 });
