@@ -1,4 +1,4 @@
-import { FILTERS } from '../../actions/types';
+import { FILTERS, FILTER_TYPE } from '../../actions/types';
 import filtersReducer from '../../reducers/filters';
 
 test('should set default state', () => {
@@ -63,4 +63,28 @@ test('should set archive year state', () => {
   };
   const state = filtersReducer(undefined, action);
   expect(state.archiveYear).toBe(archiveYear);
+});
+
+test('should set all set post filters types and values', () => {  
+  Object.keys(FILTER_TYPE).forEach(type => {
+    const filterType = type;
+    let filterValue = '';
+    switch (type) {
+      case FILTER_TYPE.CATEGORY:
+      case FILTER_TYPE.SEARCH: 
+        filterValue = 'DIY';
+        break;
+      case FILTER_TYPE.ARCHIVE:
+        filterValue = '4|2018';
+        break;
+    }
+    const action = {
+      type: FILTERS.SET_POSTS_FILTER,
+      filterType,
+      filterValue
+    };
+    const state = filtersReducer(undefined, action);
+    expect(state.filterType).toBe(filterType);
+    expect(state.filterValue).toBe(filterValue);
+  });
 });
