@@ -33,3 +33,22 @@ export const dummyPosts = [
     images: []
   }
 ];
+
+export const dummyPages = [
+  {
+    id: '123abc',
+    content: 'My simple content About me',
+    contentHTML: '<div>My simple content About me</div>',
+    published: '2011-07-01T19:58:00.000Z',
+    image: 'http://my-perfect-image/image.png',
+    title: 'O mnie'
+  },
+  {
+    id: 'abc123',
+    content: 'My simple content Contact',
+    contentHTML: '<div>My simple content Contact</div>',
+    published: '2017-02-04T19:58:00.000Z',
+    image: 'http://my-perfect-image/image2.png',
+    title: 'Kontakt'
+  }
+];

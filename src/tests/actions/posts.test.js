@@ -16,7 +16,6 @@ test('should properly set posts action object with provided posts', () => {
 
 test('should correctly set posts from blogger api', done => {
   const store = createMockStore({});
-
   return store.dispatch(setPostsAsync()).then(()=> {
     const actions = store.getActions();
     expect(actions[0]).toEqual({ 
