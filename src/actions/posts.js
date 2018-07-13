@@ -19,7 +19,7 @@ export const setPostsAsync = () => {
       dispatch(setPosts(posts));
     })
     .catch(err => {
-      console.log(err);
+      console.log('postserr', err);
     })
   };  
 };
