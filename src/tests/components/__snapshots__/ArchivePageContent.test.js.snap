@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render ArchivePageContent 1`] = `
+<div>
+  ArchivePageContent content...
+  <Connect(PostList) />
+  <Connect(Archive)
+    selectValue="8|2011"
+  />
+</div>
+`;
