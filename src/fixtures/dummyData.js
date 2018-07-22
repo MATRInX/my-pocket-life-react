@@ -17,7 +17,7 @@ export const dummyPosts = [
     title: 'Sample title2',
     content: 'Sample post content 2',
     labels: [
-      'News'
+      'News', 'Ulubione'
     ],
     images: []
   },
