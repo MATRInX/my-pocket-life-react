@@ -1,5 +1,9 @@
 export default pages => {
-  return pages.forEach(page => {
-    return page.title === 'Kontakt' ? true : false;
+  let contactPage;
+  pages.forEach(page => {
+    if (!contactPage && page.title === 'Kontakt') {
+      contactPage = page;
+    }
   });
+  return contactPage;
 };
