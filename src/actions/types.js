@@ -6,6 +6,10 @@ export const PAGES = {
   SET_PAGES: 'SET_PAGES'
 };
 
+export const INSTAGRAM = {
+  SET_IMAGES: 'SET_IMAGES'
+};
+
 // searchText, categoryByLabel, mainPageByindex, archiveByMonthAndYear
 export const FILTERS = {
   SET_MAIN_PAGE_INDEX: 'SET_MAIN_PAGE_INDEX',

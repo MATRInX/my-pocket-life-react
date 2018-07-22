@@ -55,3 +55,82 @@ export const dummyPages = [
     title: 'Kontakt'
   }
 ];
+
+export const dummyInstagram = [
+  {
+    images: {
+      low_resolution: {
+        width: 320, 
+        url: 'https://simpleInstagramLow_resolutionImage1.jpg', 
+        height: 320},
+      standard_resolution: {
+        width: 640, 
+        url: 'https://simpleInstagramStandard_resolutionImage1.jpg', 
+        height: 640},
+      thumbnail: {
+        width: 150, 
+        url: 'https://simpleInstagramThumbnailImage1.jpg', 
+        height: 150}
+    },
+    likes: 21,
+    link: 'https://www.instagram.com/p/aaaaaa/',
+    tags: ['scrap', 'pocket', 'scrapbooking']
+  },
+  {
+    images: {
+      low_resolution: {
+        width: 320, 
+        url: 'https://simpleInstagramLow_resolutionImage2.jpg', 
+        height: 320},
+      standard_resolution: {
+        width: 640, 
+        url: 'https://simpleInstagramStandard_resolutionImage2.jpg', 
+        height: 640},
+      thumbnail: {
+        width: 150, 
+        url: 'https://simpleInstagramThumbnailImage2.jpg', 
+        height: 150}
+    },
+    likes: 21,
+    link: 'https://www.instagram.com/p/bbbbbb/',
+    tags: ['scrap', 'pocket', 'scrapbooking']
+  },
+  {
+    images: {
+      low_resolution: {
+        width: 320, 
+        url: 'https://simpleInstagramLow_resolutionImage3.jpg', 
+        height: 320},
+      standard_resolution: {
+        width: 640, 
+        url: 'https://simpleInstagramStandard_resolutionImage3.jpg', 
+        height: 640},
+      thumbnail: {
+        width: 150, 
+        url: 'https://simpleInstagramThumbnailImage3.jpg', 
+        height: 150}
+    },
+    likes: 21,
+    link: 'https://www.instagram.com/p/cccccc/',
+    tags: ['scrap', 'pocket', 'scrapbooking']
+  },
+  {
+    images: {
+      low_resolution: {
+        width: 320, 
+        url: 'https://simpleInstagramLow_resolutionImage4.jpg', 
+        height: 320},
+      standard_resolution: {
+        width: 640, 
+        url: 'https://simpleInstagramStandard_resolutionImage4.jpg', 
+        height: 640},
+      thumbnail: {
+        width: 150, 
+        url: 'https://simpleInstagramThumbnailImage4.jpg', 
+        height: 150}
+    },
+    likes: 21,
+    link: 'https://www.instagram.com/p/dddddd/',
+    tags: ['scrap', 'pocket', 'scrapbooking']
+  }
+];
