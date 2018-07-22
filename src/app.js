@@ -10,6 +10,7 @@ import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import { setPosts, setPostsAsync } from './actions/posts';
 import { setPagesAsync } from './actions/pages';
+import { setImagesAsync } from './actions/instagram';
 import { setMainPageIndex } from './actions/filters';
 import { dummyPosts } from './fixtures/dummyData';
 
@@ -20,6 +21,7 @@ const store = configureStore();
 //store.dispatch(setPosts(dummyPosts));
 store.dispatch(setPostsAsync());
 store.dispatch(setPagesAsync());
+store.dispatch(setImagesAsync());
 store.dispatch(setMainPageIndex(3));
 
 const jsx = (

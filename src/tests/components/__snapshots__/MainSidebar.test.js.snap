@@ -3,7 +3,7 @@
 exports[`should correctly render MainSidebar 1`] = `
 <aside>
   <Connect(AboutMe) />
-  <InstagramFeed />
+  <Connect(InstagramFeed) />
   <Connect(FavouritePosts) />
   <FacebookFanpage />
   <Connect(Archive) />

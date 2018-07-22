@@ -2,6 +2,56 @@
 
 exports[`should correctly render InstagramFeed widget on sidebar 1`] = `
 <div>
-  InstagramFeed content
+  <p>
+    InstagramFeed content
+  </p>
+  <div
+    key="0"
+  >
+    <a
+      href="https://www.instagram.com/p/aaaaaa/"
+      target="_blank"
+    >
+      <img
+        src="https://simpleInstagramLow_resolutionImage1.jpg"
+      />
+    </a>
+  </div>
+  <div
+    key="1"
+  >
+    <a
+      href="https://www.instagram.com/p/bbbbbb/"
+      target="_blank"
+    >
+      <img
+        src="https://simpleInstagramLow_resolutionImage2.jpg"
+      />
+    </a>
+  </div>
+  <div
+    key="2"
+  >
+    <a
+      href="https://www.instagram.com/p/cccccc/"
+      target="_blank"
+    >
+      <img
+        src="https://simpleInstagramLow_resolutionImage3.jpg"
+      />
+    </a>
+  </div>
+  <div
+    key="3"
+  >
+    <a
+      href="https://www.instagram.com/p/dddddd/"
+      target="_blank"
+    >
+      <img
+        src="https://simpleInstagramLow_resolutionImage4.jpg"
+      />
+    </a>
+  </div>
 </div>
 `;
