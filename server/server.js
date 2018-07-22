@@ -13,6 +13,8 @@ const getAllPostsUrl = `${bloggerApi}/blogs/${blogId}/posts?key=${bloggerApiKey}
 const getAllPostsUrlWith = `${bloggerApi}/blogs/${blogId}/posts?key=${bloggerApiKey}&fetchImages=true`;  // 1.8sek
 const getAllPostsUrlPartial = `${bloggerApi}/blogs/${blogId}/posts?key=${bloggerApiKey}&maxResults=500&fetchImages=true&fields=items(id,content,labels,published,title,url,images)`;  // sek
 const getAllPagesUrlPartial = `${bloggerApi}/blogs/${blogId}/pages?key=${bloggerApiKey}&fields=items(id,content,published,title)`;  // sek
+const instagramAccessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
+const getInstagramFeed = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${instagramAccessToken}&count=4`;
 
 const myPocketLifeRoute = `${bloggerApi}/blogs/byurl?url=http://my-pocket-life.blogspot.com/&key=${bloggerApiKey}`;
 
@@ -73,6 +75,25 @@ app.get('/api/get-all-pages', (req, res, next) => {
     });
     res.send(response.data);
   }).catch(err => {
+    console.log(err);
+  });
+});
+
+app.post('/api/get-instagram-feed', (req, res, next) => {
+  axios.get(getInstagramFeed)
+  .then(response => {
+    const instagramData = [];
+    response.data.data.forEach(singleItem => {
+      instagramData.push({
+        images: singleItem.images,
+        likes: singleItem.likes.count,
+        link: singleItem.link,
+        tags: singleItem.tags
+      });
+    });
+    res.send(instagramData);
+  })
+  .catch(err => {
     console.log(err);
   });
 });
