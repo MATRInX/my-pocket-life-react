@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render PostsList component 1`] = `
+<div>
+  <PostListItem
+    content="Sample post content 1"
+    contentShort="My short content1 to show on main page"
+    id="123abc"
+    images={Array []}
+    key="0"
+    labels={
+      Array [
+        "DIY",
+        "News",
+      ]
+    }
+    published="2011-08-01T19:58:00.000Z"
+    title="Sample title1"
+    url="http://buzz.blogger.com/2011/08/latest-updates-august-1st.html"
+  />
+  <PostListItem
+    content="Sample post content 2"
+    contentShort="My short content2 to show on main page"
+    id="321abc"
+    images={Array []}
+    key="1"
+    labels={
+      Array [
+        "News",
+        "Ulubione",
+      ]
+    }
+    published="2011-06-01T19:58:00.000Z"
+    title="Sample title2"
+    url="http://buzz.blogger.com/2011/06/latest-updates-august-1st.html"
+  />
+  <PostListItem
+    content="Sample post content 3"
+    contentShort="My short content3 to show on main page"
+    id="321cba"
+    images={Array []}
+    key="2"
+    labels={
+      Array [
+        "DIY",
+      ]
+    }
+    published="2011-07-01T19:58:00.000Z"
+    title="Sample title1"
+    url="http://buzz.blogger.com/2011/07/latest-updates-august-1st.html"
+  />
+</div>
+`;
+
+exports[`should correctly render PostsList components with no posts 1`] = `
+<div>
+  <div>
+    Brak postów do wyświetlenia
+  </div>
+</div>
+`;
