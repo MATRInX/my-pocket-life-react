@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render PostListItem 1`] = `
+<div>
+  <Link
+    replace={false}
+    to="/post/latest-updates-august-1st.html"
+  >
+    <h2>
+      Sample title1
+    </h2>
+  </Link>
+  <p>
+    7 lat temu
+  </p>
+  <Link
+    replace={false}
+    to="/post/latest-updates-august-1st.html"
+  >
+    <img />
+  </Link>
+  <p>
+    My short content1 to show on main page
+  </p>
+  <span
+    key="0"
+  >
+    <Link
+      replace={false}
+      to="/kategoria/diy"
+    >
+      DIY
+    </Link>
+    , 
+  </span>
+  <span
+    key="1"
+  >
+    <Link
+      replace={false}
+      to="/kategoria/news"
+    >
+      News
+    </Link>
+  </span>
+</div>
+`;

@@ -5,6 +5,7 @@ export const dummyPosts = [
     url: 'http://buzz.blogger.com/2011/08/latest-updates-august-1st.html',
     title: 'Sample title1',
     content: 'Sample post content 1',
+    contentShort: 'My short content1 to show on main page',
     labels: [
       'DIY', 'News'
     ],
@@ -16,6 +17,7 @@ export const dummyPosts = [
     url: 'http://buzz.blogger.com/2011/06/latest-updates-august-1st.html',
     title: 'Sample title2',
     content: 'Sample post content 2',
+    contentShort: 'My short content2 to show on main page',
     labels: [
       'News', 'Ulubione'
     ],
@@ -27,6 +29,7 @@ export const dummyPosts = [
     url: 'http://buzz.blogger.com/2011/07/latest-updates-august-1st.html',
     title: 'Sample title1',
     content: 'Sample post content 3',
+    contentShort: 'My short content3 to show on main page',
     labels: [
       'DIY'
     ],
