@@ -1,4 +1,4 @@
-import { dummyPosts, dummyPages } from '../../fixtures/dummyData';
+import { dummyPosts, dummyPages, dummyInstagram } from '../../fixtures/dummyData';
 const axios = require.requireActual('axios');
 
 const response = (url) => {
@@ -12,6 +12,9 @@ const response = (url) => {
       const data = {
         items: [...dummyPages]
       };
+      resolve({ data });
+    } else if (url==='/api/get-instagram-feed') {
+      const data = [...dummyInstagram];
       resolve({ data });
     } else {
       reject('Wrong url path');
