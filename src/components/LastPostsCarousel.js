@@ -1,28 +1,50 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Carousel } from 'react-responsive-carousel';
+import selectLastPostsCarousel from '../selectors/lastPostsCarousel';
 
-const LastPostsCarousel = () => (
-  <Carousel 
-    showThumbs={false} 
-    showStatus={false} 
-    infiniteLoop={true} 
-    emulateTouch={true} 
-    autoPlay={true} 
-    interval={5000}
-  >
-    <div>
-      <img src="https://picsum.photos/200?image=0" width="200" height="200"/>
-      <p className="legend">Legend 1</p>
-    </div>
-    <div>
-      <img src="https://picsum.photos/200?image=1" width="200" height="200"/>
-      <p className="legend">Legend 1</p>
-    </div>
-    <div>
-      <img src="https://picsum.photos/200?image=2" width="200" height="200"/>
-      <p className="legend">Legend 1</p>
-    </div>
-  </Carousel>
+const temporaryStyle = {
+  width: '400px'
+};
+
+const pStyle = {
+  background: 'transparent',
+  color: 'black',
+  fontWeight: '700',
+  textTransform: 'uppercase'
+};
+
+export const LastPostsCarousel = ({ carouselPosts } = props) => (
+  <div style={temporaryStyle}>
+    {
+      carouselPosts.length === 0 ? (
+        <p>Loading...</p>
+      ) : (
+        <Carousel 
+          autoPlay={true} 
+          emulateTouch={true} 
+          infiniteLoop={true} 
+          interval={5000}
+          showIndicators={false}
+          showStatus={false} 
+          showThumbs={false} 
+        >
+          {
+            carouselPosts.map((singlePost, index) => (
+              <div key={index}>
+                <img src={singlePost.image} width="300" height="300"/>
+                <p className="legend" style={pStyle}>{singlePost.title}</p>
+              </div>
+            ))
+          }      
+        </Carousel>
+      )
+    }    
+  </div>
 );
 
-export default LastPostsCarousel;
+const mapStateToProps = ({ posts } = state) => ({
+  carouselPosts: selectLastPostsCarousel(posts)
+});
+
+export default connect(mapStateToProps)(LastPostsCarousel);

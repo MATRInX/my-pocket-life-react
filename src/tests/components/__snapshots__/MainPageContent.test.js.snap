@@ -3,7 +3,7 @@
 exports[`should correctly render MainPageContent 1`] = `
 <div>
   MainPageContent...
-  <LastPostsCarousel />
+  <Connect(LastPostsCarousel) />
   <MainBody />
   <MainSidebar />
 </div>

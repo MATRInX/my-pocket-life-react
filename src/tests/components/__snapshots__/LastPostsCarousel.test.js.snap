@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render LastPostsCarousel component 1`] = `
+<div
+  style={
+    Object {
+      "width": "400px",
+    }
+  }
+>
+  <Carousel
+    autoPlay={true}
+    axis="horizontal"
+    centerMode={false}
+    centerSlidePercentage={80}
+    dynamicHeight={false}
+    emulateTouch={true}
+    infiniteLoop={true}
+    interval={5000}
+    onChange={[Function]}
+    onClickItem={[Function]}
+    onClickThumb={[Function]}
+    selectedItem={0}
+    showArrows={true}
+    showIndicators={false}
+    showStatus={false}
+    showThumbs={false}
+    statusFormatter={[Function]}
+    stopOnHover={true}
+    swipeScrollTolerance={5}
+    swipeable={true}
+    transitionTime={350}
+    useKeyboardArrows={false}
+    verticalSwipe="standard"
+    width="100%"
+  >
+    <div
+      key="0"
+    >
+      <img
+        height="300"
+        width="300"
+      />
+      <p
+        className="legend"
+        style={
+          Object {
+            "background": "transparent",
+            "color": "black",
+            "fontWeight": "700",
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Sample title1
+      </p>
+    </div>
+    <div
+      key="1"
+    >
+      <img
+        height="300"
+        width="300"
+      />
+      <p
+        className="legend"
+        style={
+          Object {
+            "background": "transparent",
+            "color": "black",
+            "fontWeight": "700",
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Sample title2
+      </p>
+    </div>
+    <div
+      key="2"
+    >
+      <img
+        height="300"
+        width="300"
+      />
+      <p
+        className="legend"
+        style={
+          Object {
+            "background": "transparent",
+            "color": "black",
+            "fontWeight": "700",
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Sample title1
+      </p>
+    </div>
+  </Carousel>
+</div>
+`;
+
+exports[`should render loading information when there is no last posts 1`] = `
+<div
+  style={
+    Object {
+      "width": "400px",
+    }
+  }
+>
+  <p>
+    Loading...
+  </p>
+</div>
+`;
